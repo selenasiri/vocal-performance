@@ -1,0 +1,174 @@
+body {
+  background: rgb(146, 146, 165);
+  color: white;
+  font: 16px arial, sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+td {
+  background-color: indianred;
+  padding: 20px;
+}
+h1 {
+  font-family: Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed,
+    Helvetica, Arial, sans-serif;
+}
+h2 {
+  font-family: Consolas, Andale Mono, Lucida Console, Lucida Sans Typewriter,
+    Monaco, Courier New, monospace;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+#outside-container {
+  background-color: brown;
+  width: 800px;
+  margin: auto;
+}
+
+#inside-container {
+  background-color: brown;
+  width: 700px;
+}
+
+.course {
+  background-color: #eca367;
+  text-align: center;
+}
+
+.course-title {
+  font-weight: bold;
+}
+
+.lunch {
+  background-color: tan;
+  text-align: center;
+}
+
+/* CSS for navigation */
+nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+nav a {
+  color: purple;
+  text-decoration: none;
+  padding: 10px;
+  margin: 15px;
+  background-color: #d5b17c;
+  text-decoration-color: #925051;
+  border-radius: 10px;
+  display: block;
+}
+
+nav a:hover {
+  color: red;
+  background-color: white;
+  border-right: 3px solid red;
+}
+/* end of CSS for navigation */
+
+/* Absolute Positioning */
+
+td nav {
+  position: static;
+}
+
+div#outside-container1 {
+  position: relative;
+  height: 920px;
+  width: 950px;
+  margin: 0 auto;
+  border: 1px solid brown;
+  background-color: indianred;
+  align-self: center;
+}
+
+div#banner1 {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 860px;
+  height: 80px;
+  border-bottom: 1px solid brown;
+}
+
+#logo {
+  position: absolute;
+  left: 30px;
+}
+#banner-title {
+  position: absolute;
+  right: 150px;
+}
+
+div#nav1 {
+  position: absolute;
+  top: 120px;
+  left: 15px;
+  width: 170px;
+  border-right: 1px solid brown;
+}
+
+div#contents1 {
+  position: absolute;
+  top: 120px;
+  left: 175px;
+  margin-right: 20px;
+  text-align: justify;
+}
+
+img.my_bio_img {
+  float: left;
+  margin: 260px 15px 260px 20px;
+}
+
+/* end of Absolute Positioning */
+
+/* Fixed Positioning */
+
+div#banner {
+  position: fixed;
+  top: 0;
+  left: 15px;
+  width: 1060px;
+  height: 75px;
+  border-top: 15px solid #b0f9bf;
+  background-color: indianred;
+  border-bottom: 1px solid brown;
+  z-index: 3;
+}
+
+div#nav {
+  position: fixed;
+  top: 90px;
+  left: 15px;
+  width: 180px;
+  padding-top: 15px;
+  padding-bottom: 1000px;
+  background-color: indianred;
+  border-right: 1px solid brown;
+  z-index: 1;
+}
+
+div#contents {
+  position: absolute;
+  top: 90px;
+  left: 195px;
+  width: 850px;
+  padding-top: 15px;
+  padding-right: 30px;
+  margin: 0 auto;
+  text-align: justify;
+  padding-bottom: 1000px;
+  background-color: indianred;
+}
+
+/* end of Fixed Positioning */
