@@ -45,68 +45,79 @@
       </div>
 
       <div id="contents1">
-        <img class="my-bio-img" src="../images/bio.jpg" alt="Bio" />
-        <div>
-          <p>
-            "I found myself questioning whether musical theater was really the
-            best place for me. My voice coach at that time, Mona Greenberg of
-            Manalapan, had introduced me to some classical soprano pieces, which
-            she felt would highlight my strengths. Those pieces, sung in
-            Italian, grew on me, and friends and family also began to notice how
-            well they suited my voice. I began to realize that even within
-            musical theater the songs I loved the most were what I consider
-            “legit styled” works, such as Christine from
-            <i>Phantom of the Opera</i>. Then, with little time to spare, I let
-            my parents know that I decided to apply to programs in classical
-            vocal performance instead."
-          </p>
+        <div id="form-errors-container">
+          <div id="errors">&nbsp;</div>
+          <form
+            name="myForm"
+            onsubmit="return validate()"
+            class="submitssion-form"
+            action="#"
+            method="post"
+          >
+            <fieldset>
+              <legend>Registration</legend>
 
-          <p>
-            As a recent graduate of Mason Gross School of the Arts Rutgers
-            University, Siri has studied Vocal Performance (B.M.). Previous
-            engagements with the New York Lyric Opera include the role of
-            Susanna (Le nozze di Figaro), Barbarina (Le nozze di Figaro), and
-            teaching private singing lessons as an apprentice teacher with the
-            New York Singing Teachers' Association. She was also a finalist in
-            the Beijing "Shui Li Fang Bei" Mandarin pop singing competition in
-            2015, which can be viewed on her website
-            <a href="https://selenasiri.com" target="_blank"
-              >www.selenasiri.com</a
-            >
-            or
-            <a
-              href="https://www.youtube.com/watch?v=DAPY1g5m0I8"
-              target="_blank"
-              >Youtube</a
-            >
-            along with other recent performances. In addition to her music, she
-            continues to search for new ways to display "truthful, living art"
-            along with technology. She is currently pursuing courses in HTML,
-            CSS and Javascript alongside singing to reach a wider audience and
-            improve upon web designing.
-          </p>
+              <div class="name-group-container">
+                <div class="name-group">
+                  <label for="firstname">First Name</label>
+                  <input
+                    type="text"
+                    name="firstname"
+                    id="firstname"
+                    title="first name" required
 
-          <p>
-            In addition to voice performance, Siri has been teaching private
-            singing lessons as an apprentice teacher with the New York Singing
-            Teachers' Association. This has taken place since October 2018. She
-            strongly believes that in order to hold strong teaching skills a
-            teacher must whole-heartedly comprehend the knowledge they are
-            handing down to the student. Just as a student who is furtherdown
-            the road of education, she has gained an immense amount of
-            satisfaction from continuing her studies on how to properly teach
-            the voice. This was through vocal pedagogy courses that overlaped
-            topics in anatomy and physiology, psychology, and social pressures
-            that can all influence one’s sound quality. On the side, Siri is
-            passionate about animal rights and is an activist for Anonymous for
-            the Voiceless. The organization was a movement promoting a vegan
-            diet to end world suffering. She also participates with the Curvy
-            Girls group that stands up for those living with scoliosis. She
-            looks forward to continuing her journey with activism and helping
-            others find their voice. It is her goal to use all these possible
-            ways of communication to continue influencing her students and
-            community for deeper understandings and a better lifestyle.
-          </p>
+                  />
+                </div>
+                <br>
+
+                <div class="name-group">
+                  <label for="lastname">Last Name</label>
+                  <input
+                    type="text"
+                    name="lastname"
+                    id="lastname"
+                    title="last name" required
+                  />
+                </div>
+                <br>
+                
+                <div class="email">
+                  <label for="email">Email</label>
+                  <input
+                    type="text"
+                    name="email"
+                    id="email"
+                    title="email" required
+                    />
+
+                </div>
+                <br>
+
+                <div class="password">
+                    <label for="password">Password</label>
+                    <input type="password" 
+                    id="password" name="password" 
+                   
+                    title="Must contain at least 6 characters" required>
+                </div>
+                <br>
+
+                <div class="confirm-password">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" 
+                    id="confirm-password" name="confirm-password" 
+                   
+                    title="Must contain at least 6 characters" required>
+                </div>
+                <br>
+                
+
+              <div> 
+                <br>
+                <input type="submit" value="Submit">
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
