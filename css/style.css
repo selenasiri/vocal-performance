@@ -120,7 +120,7 @@ div#nav1 {
 div#contents1 {
   position: absolute;
   top: 120px;
-  left: 175px;
+  left: 230px;
   margin-right: 20px;
   text-align: justify;
 }
@@ -172,3 +172,22 @@ div#contents {
 }
 
 /* end of Fixed Positioning */
+
+/*  form */
+label {
+  display: block;
+  padding: 0.5rem 0 0.25rem;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+
+input,
+select,
+textarea {
+  border: 2px solid #298089;
+  padding: 0.25rem;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+/*  end of form */
