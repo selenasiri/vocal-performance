@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vocal Performance</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <script src="../scripts/artist.js"></script>
   </head>
 
   <body>
@@ -46,8 +47,20 @@
 
       <div id="contents1">
         <div>
-          <p></p>
+          <div id="artist"></div>
+          <div id="top-tracks"></div>
         </div>
+
+        <h1>Search Artist</h1>
+        <select id="selectedArtist" onchange="getArtist()">
+          <option value="Maria Callas">Maria Callas</option>
+          <option value="Luciano Pavarotti">Luciano Pavarotti</option>
+          <option value="Joan Sutherland">Joan Sutherland</option>
+          <option value="Renata Tebaldi">Renata Tebaldi</option>
+          <option value="Montserrat Caballe">Montserrat Caballé</option>
+          <option value="Renee Fleming">Renée Fleming</option>
+          <option value="Marilyn Horne">Marilyn Horne</option>
+        </select>
       </div>
     </div>
   </body>
