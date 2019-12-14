@@ -11,13 +11,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vocal Performance</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <script src="../scripts/adv_validator.js"></script>
   </head>
 
   <body>
     <div id="outside-container1">
       <div id="banner1">
         <div id="logo">
-          <h2>Logo</h2>
+            <h2><img src="../images/logo.jpeg" alt="Logo" /></h2>
         </div>
         <div id="banner-title">
           <h1>Vocal Performance</h1>
@@ -45,6 +46,7 @@
       </div>
 
       <div id="contents1">
+          <img src="../images/registration.jpeg" alt="registration" />
         <div id="form-errors-container">
           <div id="errors">&nbsp;</div>
           <form
@@ -64,11 +66,11 @@
                     type="text"
                     name="firstname"
                     id="firstname"
-                    title="first name" required
+                    title="first name" 
 
                   />
                 </div>
-                <br>
+               <br>
 
                 <div class="name-group">
                   <label for="lastname">Last Name</label>
@@ -76,7 +78,7 @@
                     type="text"
                     name="lastname"
                     id="lastname"
-                    title="last name" required
+                    title="last name" 
                   />
                 </div>
                 <br>
@@ -87,35 +89,141 @@
                     type="text"
                     name="email"
                     id="email"
-                    title="email" required
+                    title="email" 
                     />
 
                 </div>
                 <br>
 
-                <div class="password">
-                    <label for="password">Password</label>
-                    <input type="password" 
-                    id="password" name="password" 
-                   
-                    title="Must contain at least 6 characters" required>
-                </div>
-                <br>
+            
 
-                <div class="confirm-password">
-                    <label for="confirm-password">Confirm Password</label>
-                    <input type="password" 
-                    id="confirm-password" name="confirm-password" 
-                   
-                    title="Must contain at least 6 characters" required>
-                </div>
+                  <label for="streetName">Street Name:</label>
+                  <input type="text" name="streetName" id="streetName" />
+
+              </br>
+            </br>
+                  <label for="city">City:</label>
+                  <input type="text" name="city" id="city" />
+                </br>
+              </br>
+                  <label for="state">State:</label>
+                  <select name="state" id="state">
+                    <option value=""></option>
+                    <option value="alabama">Alabama</option>
+                    <option value="alaska">Alaska</option>
+                    <option value="arizona">Arizona</option>
+                    <option value="arkansas">Arkansas</option>
+                    <option value="california">California</option>
+                    <option value="colorado">Colorado</option>
+                    <option value="connecticut">Connecticut</option>
+                    <option value="deliware">Deliware</option>
+                    <option value="florida">Florida</option>
+                    <option value="georgia">Georgia</option>
+                    <!--						10-->
+                    <option value="hawaii">Hawaii</option>
+                    <option value="idaho">Idaho</option>
+                    <option value="illinois">Illinois</option>
+                    <option value="indiana">Indiana</option>
+                    <option value="iowa">Iowa</option>
+                    <option value="kansas">Kansas</option>
+                    <option value="kentucky">Kentucky</option>
+                    <option value="louisiana">Louisiana</option>
+                    <option value="maine">Maine</option>
+                    <option value="maryland">Maryland</option>
+
+                    <!--						20-->
+                    <option value="massachusetts">Massachusetts</option>
+                    <option value="michigan">Michigan</option>
+                    <option value="minnesota">Minnesota</option>
+                    <option value="mississippi">Mississippi</option>
+                    <option value="missouri">Missouri</option>
+                    <option value="montana">Montana</option>
+                    <option value="nebraska">Nebraska</option>
+                    <option value="nevada">Nevada</option>
+                    <option value="newHampshire">New Hampshire</option>
+                    <option value="newJersey">New Jersey</option>
+
+                    <!--						30-->
+                    <option value="newMexico">New Mexico</option>
+                    <option value="newYork">New York</option>
+                    <option value="northCarolina">North Carolina</option>
+                    <option value="northDakota">North Dakota</option>
+                    <option value="Ohio">Ohio</option>
+                    <option value="Oklahoma">Oklahoma</option>
+                    <option value="Oregon">Oregon</option>
+                    <option value="Pennsylvania">Pennsylvania</option>
+                    <option value="rhodeIsland">Rhode Island</option>
+                    <option value="southCarolina">South Carolina</option>
+
+                    <!--						40-->
+                    <option value="southDakota">South Dakota</option>
+                    <option value="tennessee">Tennessee</option>
+                    <option value="texas">Texas</option>
+                    <option value="utah">Utah</option>
+                    <option value="vermont">Vermont</option>
+                    <option value="virginia">Virginia</option>
+                    <option value="washington">Washington</option>
+                    <option value="westVirginia">West Virginia</option>
+                    <option value="wisconsin">Wisconsin</option>
+                    <option value="wyoming">Wyoming</option>
+
+                    <!--						50-->
+                  </select>
+                </br>
+              </br>
+                  <label for="zipCode">Zip code:</label>
+
+                  <input
+                    type="text"
+                    name="zipCode"
+                    id="zipCode"
+                    size="10"
+                    maxlength="10"
+                    title="e.g. 12345 or 12345-6789"
+                  />
+                </br>
+              </br>
+                  <label for="areaCode">Telephone:</label>
+                  <input
+                    type="text"
+                    name="areaCode"
+                    id="areaCode"
+                    size="3"
+                    maxlength="3"
+                    title="area code"
+                  />
+                  -
+                  <input
+                    type="text"
+                    name="phonePreffix"
+                    id="phonePreffix"
+                    size="3"
+                    maxlength="3"
+                    title="phone preffix"
+                  />
+                  -
+                  <input
+                    type="text"
+                    name="phoneSuffix"
+                    id="phoneSuffix"
+                    size="4"
+                    maxlength="4"
+                    title="phone suffix"
+                  />
+                </fieldset>
+              </br>
+            </br>
+                <input
+                  class="submit-btn"
+                  type="submit"
+                  value="Validation Form"
+                />
+              </form>
+            </div>
                 <br>
                 
 
-              <div> 
-                <br>
-                <input type="submit" value="Submit">
-              </div>
+             
             </div>
           </form>
         </div>

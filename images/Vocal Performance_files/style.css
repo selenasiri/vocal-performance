@@ -3,9 +3,7 @@ body {
   color: white;
   font: 16px arial, sans-serif;
 }
-img {
-  border-radius: 10%;
-}
+
 a {
   color: white;
   text-decoration: none;
@@ -60,12 +58,12 @@ nav {
 }
 
 nav a {
-  color: black;
+  color: purple;
   text-decoration: none;
   padding: 10px;
   margin: 15px;
-  background-color: #eecbc0;
-  text-decoration-color: #220505;
+  background-color: #d5b17c;
+  text-decoration-color: #925051;
   border-radius: 10px;
   display: block;
 }
@@ -73,7 +71,7 @@ nav a {
 nav a:hover {
   color: red;
   background-color: white;
-  border-right: 3px solid black;
+  border-right: 3px solid red;
 }
 /* end of CSS for navigation */
 
@@ -85,11 +83,11 @@ td nav {
 
 div#outside-container1 {
   position: relative;
-  height: 2200px;
+  height: 920px;
   width: 950px;
   margin: 0 auto;
   border: 1px solid brown;
-  background-color: rgb(11, 2, 61);
+  background-color: indianred;
   align-self: center;
 }
 
@@ -128,7 +126,6 @@ div#contents1 {
 }
 
 img.my-bio-img {
-  align-content: center;
   float: left;
   margin: 260px 15px 260px 20px;
 }
